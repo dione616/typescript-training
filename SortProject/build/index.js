@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Sorter_1 = require("./Sorter");
+var Characters_1 = require("./Characters");
+var LinkedList_1 = require("./LinkedList");
+var chars = new Characters_1.Characters('GassOxzy');
+var sorter = new Sorter_1.Sorter(chars);
+sorter.sort();
+console.log(chars.data);
+var list = new LinkedList_1.LinkedList();
+list.add(599);
+list.add(11);
+list.add(-5);
+list.add(2222);
+var sorter1 = new Sorter_1.Sorter(list);
+sorter1.sort();
+list.print();
