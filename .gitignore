@@ -2,13 +2,14 @@
 dist
 .DS_Store
 .cache
-node_modules
+**node_modules
 
 # testing
 /coverage
 
 # production
-/build
+**/build
+**build
 
 # misc
 .DS_Store

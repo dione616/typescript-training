@@ -1,7 +1,11 @@
-export class Numbers {
-  constructor(public data: number[]) {}
+import { Sorter } from './Sorter'
 
-  length(): number {
+export class Numbers extends Sorter {
+  constructor(public data: number[]) {
+    super()
+  }
+
+  get length(): number {
     return this.data.length
   }
   compare(leftIndex: number, rightIndex: number): boolean {
